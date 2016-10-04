@@ -10,6 +10,7 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     
+    var ButtonArray = [String]()
     var Array = [String]()
 
     @IBOutlet var collectionViewVar: UICollectionView!
@@ -25,7 +26,9 @@ class CollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
         Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King"]
+        ButtonArray = ["Begin", "Begin", "Begin"]
     
         
     }
@@ -41,9 +44,12 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        var Button = cell.viewWithTag(1) as! UILabel
+        var Label = cell.viewWithTag(1) as! UILabel
         
-        Button.text = Array[indexPath.row]
+        Label.text = Array[indexPath.row]
+        
+        var Button = cell.viewWithTag(2) as! UIButton
+        Button.setTitle(ButtonArray[indexPath.row], for: UIControlState.normal)
         
         return cell
     }

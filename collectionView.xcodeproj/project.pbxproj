@@ -12,6 +12,7 @@
 		43C53E541DA3530300455BE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C53E521DA3530300455BE2 /* Main.storyboard */; };
 		43C53E561DA3530300455BE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C53E551DA3530300455BE2 /* Assets.xcassets */; };
 		43C53E591DA3530300455BE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C53E571DA3530300455BE2 /* LaunchScreen.storyboard */; };
+		43C53E611DA3865C00455BE2 /* FellowShipOfTheRingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C53E601DA3865C00455BE2 /* FellowShipOfTheRingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		43C53E551DA3530300455BE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43C53E581DA3530300455BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43C53E5A1DA3530300455BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C53E601DA3865C00455BE2 /* FellowShipOfTheRingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FellowShipOfTheRingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				43C53E4E1DA3530300455BE2 /* AppDelegate.swift */,
+				43C53E601DA3865C00455BE2 /* FellowShipOfTheRingViewController.swift */,
 				43C53E501DA3530300455BE2 /* ViewController.swift */,
 				43C53E521DA3530300455BE2 /* Main.storyboard */,
 				43C53E551DA3530300455BE2 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				43C53E511DA3530300455BE2 /* ViewController.swift in Sources */,
 				43C53E4F1DA3530300455BE2 /* AppDelegate.swift in Sources */,
+				43C53E611DA3865C00455BE2 /* FellowShipOfTheRingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

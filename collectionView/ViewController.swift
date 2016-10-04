@@ -14,6 +14,7 @@ class CollectionViewController: UICollectionViewController {
     
     @IBOutlet weak var collectionViewCellVar: UICollectionViewCell!
     
+   
 
     
     

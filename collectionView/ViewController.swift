@@ -12,30 +12,22 @@ class CollectionViewController: UICollectionViewController {
     
     var ButtonArray = [String]()
     var Array = [String]()
-
+    
     @IBOutlet var collectionViewVar: UICollectionView!
     
     @IBOutlet weak var collectionViewCellVar: UICollectionViewCell!
-    
-   
-
-    
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King"]
-        ButtonArray = ["Begin", "Begin", "Begin"]
-    
-        
+        Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King", "The Hobbit"]
+        ButtonArray = ["Begin", "Begin", "Begin", "Begin"]
     }
-
+    
+    func constraintsForCells() {
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -53,7 +45,6 @@ class CollectionViewController: UICollectionViewController {
         
         return cell
     }
-
 
 }
 

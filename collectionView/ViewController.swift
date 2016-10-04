@@ -9,6 +9,8 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController {
+    
+    var Array = [String]()
 
     @IBOutlet var collectionViewVar: UICollectionView!
     
@@ -22,6 +24,8 @@ class CollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King"]
     
         
     }
@@ -32,11 +36,14 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return Array.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        var Button = cell.viewWithTag(1) as! UILabel
+        
+        Button.text = Array[indexPath.row]
         
         return cell
     }

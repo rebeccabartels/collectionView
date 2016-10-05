@@ -31,7 +31,7 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //fellowship of the ring segue goes here 
+        //fellowship of the ring segue goes here
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -39,12 +39,12 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        var Label = cell.viewWithTag(1) as! UILabel
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let Label = cell.viewWithTag(1) as! UILabel
         
         Label.text = Array[indexPath.row]
         
-        var Button = cell.viewWithTag(2) as! UIButton
+        let Button = cell.viewWithTag(2) as! UIButton
         Button.setTitle(ButtonArray[indexPath.row], for: UIControlState.normal)
         
         return cell

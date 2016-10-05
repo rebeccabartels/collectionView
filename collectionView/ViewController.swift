@@ -30,6 +30,10 @@ class CollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //fellowship of the ring segue goes here 
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Array.count
     }

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,14 +40,13 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="spatial" reuseIdentifier="cell" id="tQt-rT-sOj">
-                                <rect key="frame" x="87.5" y="50" width="200" height="150"/>
+                                <rect key="frame" x="88" y="50" width="200" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJP-BG-gsP">
-                                            <frame key="frameInset" minX="8" minY="66" width="170" height="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJP-BG-gsP">
                                             <attributedString key="attributedText">
                                                 <fragment content="Label">
                                                     <attributes>
@@ -58,10 +58,9 @@
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-QI-k2J">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-QI-k2J">
                                             <frame key="frameInset" minY="-10" width="200" height="75"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <accessibility key="accessibilityConfiguration">
+                                            <accessibility key="accessibilityConfiguration" identifier="imagename">
                                                 <bool key="isElement" value="YES"/>
                                             </accessibility>
                                         </imageView>
@@ -78,8 +77,20 @@
                                 <color key="backgroundColor" red="0.84744840860366821" green="0.80891221761703491" blue="0.94960731267929077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="F4i-QI-k2J" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="4Or-ux-xTJ"/>
+                                    <constraint firstItem="F4i-QI-k2J" firstAttribute="top" secondItem="tQt-rT-sOj" secondAttribute="topMargin" constant="-18" id="4oH-0n-jwK"/>
+                                    <constraint firstItem="F4i-QI-k2J" firstAttribute="leading" secondItem="tQt-rT-sOj" secondAttribute="leadingMargin" constant="-8" id="6GO-Xz-AIq"/>
+                                    <constraint firstItem="F4i-QI-k2J" firstAttribute="leading" secondItem="tQt-rT-sOj" secondAttribute="leadingMargin" constant="-8" id="6HE-O9-btv"/>
+                                    <constraint firstItem="F4i-QI-k2J" firstAttribute="top" secondItem="tQt-rT-sOj" secondAttribute="topMargin" constant="-18" id="90y-B3-OiK"/>
+                                    <constraint firstItem="F4i-QI-k2J" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="CJc-lC-zvD"/>
+                                    <constraint firstAttribute="leadingMargin" secondItem="WJP-BG-gsP" secondAttribute="leading" id="JTo-qU-m1C"/>
                                     <constraint firstItem="WJP-BG-gsP" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="KCP-0X-qXK"/>
+                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="dOW-gr-Ilb"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="F4i-QI-k2J" secondAttribute="trailing" constant="-8" id="hLZ-44-ahb"/>
+                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="jCS-Ci-bnv"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="WJP-BG-gsP" secondAttribute="trailing" constant="14" id="uKG-SI-fI1"/>
                                     <constraint firstItem="WJP-BG-gsP" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="xNa-7N-peL"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="F4i-QI-k2J" secondAttribute="trailing" constant="-8" id="yKJ-Un-sNE"/>
                                 </constraints>
                                 <size key="customSize" width="200" height="150"/>
                             </collectionViewCell>

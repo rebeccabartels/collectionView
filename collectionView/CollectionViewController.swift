@@ -19,6 +19,8 @@ class CollectionViewController: UICollectionViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        var image = UIImage.init(named: "imagename")
+        
         Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King", "The Hobbit"]
         ButtonArray = ["Begin", "Begin", "Begin", "Begin"]
     }

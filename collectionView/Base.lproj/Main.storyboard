@@ -47,18 +47,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJP-BG-gsP">
-                                            <attributedString key="attributedText">
-                                                <fragment content="Label">
-                                                    <attributes>
-                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <font key="NSFont" size="13" name="Apple-Chancery"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-QI-k2J">
                                             <accessibility key="accessibilityConfiguration" identifier="imagename">
                                                 <bool key="isElement" value="YES"/>
@@ -86,14 +74,7 @@
                                     <constraint firstItem="F4i-QI-k2J" firstAttribute="leading" secondItem="tQt-rT-sOj" secondAttribute="leadingMargin" constant="-8" id="6HE-O9-btv"/>
                                     <constraint firstItem="F4i-QI-k2J" firstAttribute="top" secondItem="tQt-rT-sOj" secondAttribute="topMargin" constant="-18" id="90y-B3-OiK"/>
                                     <constraint firstItem="F4i-QI-k2J" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="CJc-lC-zvD"/>
-                                    <constraint firstAttribute="leadingMargin" secondItem="WJP-BG-gsP" secondAttribute="leading" id="JTo-qU-m1C"/>
-                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="KCP-0X-qXK"/>
-                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="top" secondItem="F4i-QI-k2J" secondAttribute="bottom" constant="2.5" id="N8Q-n5-Z3x"/>
-                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="dOW-gr-Ilb"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="F4i-QI-k2J" secondAttribute="trailing" constant="-8" id="hLZ-44-ahb"/>
-                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="jCS-Ci-bnv"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="WJP-BG-gsP" secondAttribute="trailing" constant="14" id="uKG-SI-fI1"/>
-                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="xNa-7N-peL"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="F4i-QI-k2J" secondAttribute="trailing" constant="-8" id="yKJ-Un-sNE"/>
                                 </constraints>
                                 <size key="customSize" width="200" height="150"/>

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -58,11 +59,13 @@
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-QI-k2J">
-                                            <frame key="frameInset" minY="-10" width="200" height="75"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-QI-k2J">
                                             <accessibility key="accessibilityConfiguration" identifier="imagename">
                                                 <bool key="isElement" value="YES"/>
                                             </accessibility>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="F4i-QI-k2J" secondAttribute="height" multiplier="8:3" id="96m-wm-7Sf"/>
+                                            </constraints>
                                         </imageView>
                                         <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUu-iz-TXm">
                                             <frame key="frameInset" minY="66" width="200" height="84"/>
@@ -85,6 +88,7 @@
                                     <constraint firstItem="F4i-QI-k2J" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="CJc-lC-zvD"/>
                                     <constraint firstAttribute="leadingMargin" secondItem="WJP-BG-gsP" secondAttribute="leading" id="JTo-qU-m1C"/>
                                     <constraint firstItem="WJP-BG-gsP" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="KCP-0X-qXK"/>
+                                    <constraint firstItem="WJP-BG-gsP" firstAttribute="top" secondItem="F4i-QI-k2J" secondAttribute="bottom" constant="2.5" id="N8Q-n5-Z3x"/>
                                     <constraint firstItem="WJP-BG-gsP" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="dOW-gr-Ilb"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="F4i-QI-k2J" secondAttribute="trailing" constant="-8" id="hLZ-44-ahb"/>
                                     <constraint firstItem="WJP-BG-gsP" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="jCS-Ci-bnv"/>

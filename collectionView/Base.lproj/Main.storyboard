@@ -3,8 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,7 +26,7 @@
         <scene sceneID="ZRO-ON-Ig6">
             <objects>
                 <collectionViewController id="WBU-Oq-kvp" customClass="CollectionViewController" customModule="collectionView" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" misplaced="YES" indicatorStyle="black" dataMode="prototypes" id="utc-Hf-yph">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" indicatorStyle="black" dataMode="prototypes" id="utc-Hf-yph">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -41,7 +39,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="spatial" reuseIdentifier="cell" id="tQt-rT-sOj">
-                                <rect key="frame" x="88" y="50" width="200" height="150"/>
+                                <rect key="frame" x="87.5" y="50" width="200" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
@@ -55,23 +53,10 @@
                                                 <segue destination="TBh-nH-AFv" kind="show" id="QPQ-eC-dJd"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XRO-ee-Bqa">
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="XRO-ee-Bqa" secondAttribute="height" multiplier="4:3" id="ZCi-dn-8Zw"/>
-                                            </constraints>
-                                        </imageView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="0.84744840860366821" green="0.80891221761703491" blue="0.94960731267929077" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="XRO-ee-Bqa" firstAttribute="leading" secondItem="tQt-rT-sOj" secondAttribute="leadingMargin" constant="-8" id="3Qb-4m-81T"/>
-                                    <constraint firstItem="XRO-ee-Bqa" firstAttribute="centerX" secondItem="tQt-rT-sOj" secondAttribute="centerX" id="7qN-93-Kbg"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="XRO-ee-Bqa" secondAttribute="bottom" constant="-8" id="B2V-uT-60p"/>
-                                    <constraint firstItem="XRO-ee-Bqa" firstAttribute="leading" secondItem="tQt-rT-sOj" secondAttribute="leadingMargin" constant="-8" id="SLq-Tp-dc0"/>
-                                    <constraint firstItem="XRO-ee-Bqa" firstAttribute="centerY" secondItem="tQt-rT-sOj" secondAttribute="centerY" id="YMd-68-2lc"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="XRO-ee-Bqa" secondAttribute="trailing" constant="-8" id="sen-Qf-dN8"/>
-                                </constraints>
                                 <size key="customSize" width="200" height="150"/>
                             </collectionViewCell>
                         </cells>

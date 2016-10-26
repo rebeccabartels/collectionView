@@ -28,8 +28,6 @@ class CollectionViewController: UICollectionViewController {
         Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King", "The Hobbit"]
         ButtonArray = ["Fellowship Of The Ring", "Two Towers", "Return of the King", "The Hobbit"]
         ImageArray = [#imageLiteral(resourceName: "returnoftheking.png"), #imageLiteral(resourceName: "fellowship.png"), #imageLiteral(resourceName: "twotowers.png")]
-        
-        
     }
     
     func constraintsForCells() {
@@ -45,7 +43,9 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Array.count
+        
     }
+    
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
@@ -55,6 +55,10 @@ class CollectionViewController: UICollectionViewController {
         
         let Button = cell.viewWithTag(2) as! UIButton
         Button.setTitle(ButtonArray[indexPath.row], for: UIControlState.normal)
+        
+        let buttonImage = ImageArray.count
+        
+        Button.setImage(#imageLiteral(resourceName: "fellowship.png"), for: .normal)
         
         return cell
     }

@@ -56,6 +56,11 @@ class CollectionViewController: UICollectionViewController {
         let Button = cell.viewWithTag(2) as! UIButton
         Button.setTitle(ButtonArray[indexPath.row], for: UIControlState.normal)
         
+        let animage = cell.viewWithTag(3) as! UIImage
+        //worked here
+        
+        
+        
         return cell
     }
     

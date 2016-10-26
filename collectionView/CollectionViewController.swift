@@ -10,19 +10,26 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
     
+
     var ButtonArray = [String]()
     var Array = [String]()
+    var ImageArray = [UIImage]()
+    
+    
+  
     
     @IBOutlet var collectionViewVar: UICollectionView!
+
     
     @IBOutlet weak var collectionViewCellVar: UICollectionViewCell!
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        var image = UIImage.init(named: "imagename")
-        
         Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King", "The Hobbit"]
-        ButtonArray = ["Begin", "Begin", "Begin", "Begin"]
+        ButtonArray = ["Fellowship Of The Ring", "Two Towers", "Return of the King", "The Hobbit"]
+        ImageArray = [#imageLiteral(resourceName: "returnoftheking.png"), #imageLiteral(resourceName: "fellowship.png"), #imageLiteral(resourceName: "twotowers.png")]
+        
+        
     }
     
     func constraintsForCells() {
@@ -42,15 +49,17 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        let Label = cell.viewWithTag(1) as! UILabel
-        
-        Label.text = Array[indexPath.row]
+      
+//        let Label = cell.viewWithTag(1) as! UILabel
+//        Label.text = Array[indexPath.row]
         
         let Button = cell.viewWithTag(2) as! UIButton
         Button.setTitle(ButtonArray[indexPath.row], for: UIControlState.normal)
         
         return cell
     }
+ 
+
 
 }
 

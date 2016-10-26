@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4317EB071DC109BF002A13CE /* returnoftheking.png in Resources */ = {isa = PBXBuildFile; fileRef = 4317EB051DC109BF002A13CE /* returnoftheking.png */; };
+		4317EB081DC109BF002A13CE /* twotowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 4317EB061DC109BF002A13CE /* twotowers.png */; };
+		4317EB0A1DC109C8002A13CE /* fellowship.png in Resources */ = {isa = PBXBuildFile; fileRef = 4317EB091DC109C8002A13CE /* fellowship.png */; };
 		43C53E4F1DA3530300455BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C53E4E1DA3530300455BE2 /* AppDelegate.swift */; };
 		43C53E511DA3530300455BE2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C53E501DA3530300455BE2 /* CollectionViewController.swift */; };
 		43C53E541DA3530300455BE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C53E521DA3530300455BE2 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4317EB051DC109BF002A13CE /* returnoftheking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = returnoftheking.png; sourceTree = "<group>"; };
+		4317EB061DC109BF002A13CE /* twotowers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twotowers.png; sourceTree = "<group>"; };
+		4317EB091DC109C8002A13CE /* fellowship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fellowship.png; sourceTree = "<group>"; };
 		43C53E4B1DA3530300455BE2 /* collectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C53E4E1DA3530300455BE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43C53E501DA3530300455BE2 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 				43C53E501DA3530300455BE2 /* CollectionViewController.swift */,
 				43C53E521DA3530300455BE2 /* Main.storyboard */,
 				43C53E551DA3530300455BE2 /* Assets.xcassets */,
+				4317EB051DC109BF002A13CE /* returnoftheking.png */,
+				4317EB091DC109C8002A13CE /* fellowship.png */,
+				4317EB061DC109BF002A13CE /* twotowers.png */,
 				43C53E571DA3530300455BE2 /* LaunchScreen.storyboard */,
 				43C53E5A1DA3530300455BE2 /* Info.plist */,
 			);
@@ -127,7 +136,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4317EB071DC109BF002A13CE /* returnoftheking.png in Resources */,
 				43C53E591DA3530300455BE2 /* LaunchScreen.storyboard in Resources */,
+				4317EB0A1DC109C8002A13CE /* fellowship.png in Resources */,
+				4317EB081DC109BF002A13CE /* twotowers.png in Resources */,
 				43C53E561DA3530300455BE2 /* Assets.xcassets in Resources */,
 				43C53E541DA3530300455BE2 /* Main.storyboard in Resources */,
 			);

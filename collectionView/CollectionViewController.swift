@@ -25,9 +25,15 @@ class CollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // why is Array and ButtonArray both necessary and I need to put in my images
         Array = ["The Fellowship Of The Ring", "The Two Towers", "The Return Of The King", "The Hobbit"]
         ButtonArray = ["Fellowship Of The Ring", "Two Towers", "Return of the King", "The Hobbit"]
         ImageArray = [#imageLiteral(resourceName: "returnoftheking.png"), #imageLiteral(resourceName: "fellowship.png"), #imageLiteral(resourceName: "twotowers.png")]
+        
+        ImageArray.count
+        print(ImageArray)
+        
+    
         
         
     }
@@ -56,7 +62,7 @@ class CollectionViewController: UICollectionViewController {
         let Button = cell.viewWithTag(2) as! UIButton
         Button.setTitle(ButtonArray[indexPath.row], for: UIControlState.normal)
         
-        let animage = cell.viewWithTag(3) as! UIImage
+//        let animage = cell.viewWithTag(3) as! UIImage
         //worked here
         
         
